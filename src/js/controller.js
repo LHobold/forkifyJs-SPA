@@ -49,6 +49,7 @@ function init() {
   recipeView.addHandlerUpdateServings(controlServings);
   recipeView.addHandlerBookmark(controlAddBookmark);
   addrecipeView.addHanlerUploadRecipe(controlAddRecipe);
+  showKct();
 }
 init();
 
@@ -138,4 +139,8 @@ async function controlAddRecipe(newRecipe) {
     addrecipeView.renderError(err);
     resetForm();
   }
+}
+
+function showKct() {
+  console.log('Caceta');
 }
